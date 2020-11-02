@@ -101,7 +101,7 @@ img {
 }
 
 .schedule-day {
-    min-width: 25rem;
+    min-width: 40%;
     min-height: 30rem;
 
     display: flex;
@@ -213,3 +213,82 @@ img {
     padding: 1rem 2rem;
 }
 
+@media only screen and (max-width: 800px) {
+    .hero {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 7.5%;
+
+        width: 10rem;
+
+        align-items: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .schedule {
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .faq {
+        width: 90%;
+    }
+
+    #questions-container {
+        width: 90%;
+    }
+
+    .sponsors {
+        width: 90%;
+        gap: .5rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    .register {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        font-size: 1.3rem;
+    }
+
+    .tile {
+        padding: .5rem 1rem;
+    }
+
+    .schedule-day {
+        min-width: 10rem;
+        min-height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .bottom-container {
+        margin-top: 3rem;
+        height: 25rem;
+    }
+
+    .bottom-container > img {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .bottom-content {
+        padding-top: 0;
+    }
+}
