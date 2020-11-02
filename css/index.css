@@ -50,6 +50,11 @@ img {
     font-size: 2rem;
 }
 
+.register-notice {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
 .register {
     font-size: 2.3rem;
     font-weight: bolder;
