@@ -39,6 +39,10 @@ function setupFaq() {
   }
 }
 
+window.onresize = function() {
+  fixMiddleHeight();
+}
+
 setTimeout(() => {
   fixMiddleHeight();
   setupFaq();
