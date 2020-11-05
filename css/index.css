@@ -17,6 +17,7 @@ a {
 
 .hero-container {
     position: relative;
+    justify-self: left;
 }
 
 img {
