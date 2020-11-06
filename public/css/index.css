@@ -317,6 +317,8 @@ img {
     .register {
         font-size: 1.5rem;
         margin-top: 2rem;
+        display: inline;
+        float: left;
     }
 
     .about-title {
