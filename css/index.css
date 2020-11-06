@@ -28,7 +28,6 @@ i {
 .hero-container {
     position: relative;
     justify-self: left;
-    overflow: hidden;
 }
 
 img {
@@ -102,7 +101,6 @@ img {
 .sea-container {
     position: relative;
     transition: height 0.2s ease-out;
-    overflow: hidden;
 }
 
 .sea-content {
@@ -173,7 +171,6 @@ img {
 
 .bottom-container {
     position: relative;
-    overflow: hidden;
 }
 
 .bottom-content {
