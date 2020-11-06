@@ -15,9 +15,20 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #f1e8b8;
+}
+
+i {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: xx-large;
+}
+
 .hero-container {
     position: relative;
     justify-self: left;
+    overflow: hidden;
 }
 
 img {
@@ -28,16 +39,22 @@ img {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 7.5%;
+    padding-top: 5%;
 
-    width: 25rem;
+    max-height: 100%;
+}
+
+.main-title {
+    margin-bottom: 3rem;
 }
 
 .title {
@@ -59,12 +76,33 @@ img {
 .register {
     font-size: 2.3rem;
     font-weight: bolder;
-    margin-top: 20rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.anchor {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 2.5rem;
+}
+
+.iframe-container {
+    margin-top: 5rem;
+
+    width: 80%;
+    height: calc(80% * (9 / 16));
+}
+
+.responsive-iframe {
+    height: 100%;
+    width: 100%;
 }
 
 .sea-container {
     position: relative;
     transition: height 0.2s ease-out;
+    overflow: hidden;
 }
 
 .sea-content {
@@ -135,6 +173,7 @@ img {
 
 .bottom-container {
     position: relative;
+    overflow: hidden;
 }
 
 .bottom-content {
@@ -148,6 +187,30 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.footer {    
+    font-size: large;
+
+    width: 100%;
+    padding: 1rem;
+
+    background-color: #002135;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    align-self: flex-end;
+    margin-right: 1rem;
 }
 
 .faq {
@@ -221,13 +284,20 @@ img {
 
 @media only screen and (max-width: 800px) {
     .hero {
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 7.5%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
-        width: 10rem;
+    .iframe-container {
+        margin-top: .5rem;
+    }
 
-        align-items: center;
+    .main-title {
+        margin-bottom: 1rem;
+    }
+
+    .anchor {
+        width: 1.5rem;
     }
 
     .about {
@@ -263,7 +333,7 @@ img {
 
     .register {
         font-size: 1.5rem;
-        margin-top: 2rem;
+        margin-top: .5rem;
     }
 
     .about-title {
