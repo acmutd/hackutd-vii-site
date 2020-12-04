@@ -61,7 +61,7 @@ img {
 }
 
 @-webkit-keyframes rock-boat {	
-        50% { -webkit-transform:rotate(4.2deg) translateY(7.7px) }
+        50% { -webkit-transform:rotate(4.1deg) translateY(7.7px) }
 }
 
 .main-title {
