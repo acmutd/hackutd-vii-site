@@ -52,6 +52,18 @@ img {
     max-height: 100%;
 }
 
+.boat {
+    width: 50%;
+    position: absolute;
+    top: 34.5%;
+    left: 55%;
+    -webkit-animation: rock-boat 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes rock-boat {	
+        50% { -webkit-transform:rotate(4.2deg) translateY(7.7px) }
+}
+
 .main-title {
     margin-bottom: 3rem;
 }
