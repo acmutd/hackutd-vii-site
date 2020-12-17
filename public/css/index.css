@@ -96,8 +96,10 @@ img {
 .iframe-container {
     margin-top: 5rem;
 
-    width: 80%;
-    height: calc(80% * (9 / 16));
+    width: 40%;
+    height: calc(40% * (9 / 16));
+    float: right;
+
 }
 
 .responsive-iframe {
