@@ -95,12 +95,19 @@ img {
 }
 
 .iframe-container {
-  margin-top: 5rem;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 25vw;
+  height: calc(25vw * (3 / 4));
+  margin: auto 0;
+  margin-left: 2vw;
+}
 
-    width: 40%;
-    height: calc(40% * (9 / 16));
-    float: right;
-
+.about-text {
+  flex-shrink: 0;
+  width: 25vw;
+  font-size: 1.5vw;
 }
 
 .responsive-iframe {
@@ -133,10 +140,15 @@ img {
   font-size: 3rem;
   font-weight: bold;
   font-family: "Righteous", cursive;
+  text-align: center;
 }
 
 .about-content {
   font-size: 1.7rem;
+}
+
+.about-content-body {
+    display: flex;
 }
 
 .schedule {
