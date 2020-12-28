@@ -111,6 +111,8 @@ img {
   flex-shrink: 0;
   width: 25vw;
   font-size: 1.5vw;
+  line-height: 1.75;
+  text-indent: 10%;
 }
 
 .responsive-iframe {
