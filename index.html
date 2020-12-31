@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/fbbb8018cc.js" crossorigin="anonymous"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -29,7 +28,6 @@
         alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
 
 <body>
-
     <main>
         <div class="hero-container">
             <!--The island png image is no longer used-->
@@ -51,21 +49,95 @@
                         </div>
                     </div>
 
-
                 </div>
 
+                <img src="assets/hackathondatespaths.svg" width="40%" >
+                
+                    <div class="register tile">
+                        <a href="https://portal.hackutd.co">REGISTER NOW</a>
+                        <img src="assets/anchor.svg" class="anchor">
+                    </div>
+                
+                    <div class="mentor tile">
+                        <a href="https://acmutd.typeform.com/to/JY8iutCk"> OR BECOME A MENTOR</a>
+                        <img src="assets/PolySwords.svg" class="anchor">
+                    </div>
 
-                <img src="assets/hackathondatespaths.svg" width="40%">
+                <div style="
+                margin-bottom: 50rem;
+                background-color: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(5px);
+                border-radius: 15px;
+                padding: 0rem 2rem;">
+                <span style="
+                margin-bottom: 20rem;
+                    color: #ffffff;
+                    font-size: 2rem;
+                    -webkit-text-stroke-width: 1px;
+                    justify-content: center;
+                    align-items: center;">
+                    <p id="timer" style="text-align: center; font-size: 1.75rem;">
+                        <script>
+                            // Set the date we're counting down to
+                            var countDownDate = new Date("Feb 18, 2021 23:59:59").getTime();
+                            
+                            // Update the count down every 1 second
+                            var x = setInterval(function() {
+                            
+                            // Get today's date and time
+                            var now = new Date().getTime();
+                                
+                            // Find the distance between now and the count down date
+                            var distance = countDownDate - now;
+                                
+                            // Time calculations for days, hours, minutes and seconds
+                            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                            // Output the result in an element with id="timer"
+                            //Need to do some interesting acrobats to get the padding to work
 
-                <div class="register tile">
-                    <a href="https://portal.hackutd.co">REGISTER NOW</a>
-                    <img src="assets/anchor.svg" class="anchor">
+                            if (distance >= 0 && seconds < 10 && minutes < 10 && hours < 10) {
+                                document.getElementById("timer").innerHTML = days + " | 0" + hours + " | 0" + minutes + " | 0" + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && minutes < 10 && seconds < 10) {
+                                document.getElementById("timer").innerHTML = days + " | " + hours + " | 0" + minutes + " | 0" + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && hours < 10 && seconds < 10) {
+                                document.getElementById("timer").innerHTML = days + " | 0" + hours + " | " + minutes + " | 0" + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && minutes < 10 && hours < 10) {
+                                document.getElementById("timer").innerHTML = days + " | 0" + hours + " | 0" + minutes + " | " + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && seconds < 10) {
+                                document.getElementById("timer").innerHTML = days + " | " + hours + " | " + minutes + " | 0" + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && minutes < 10) {
+                                document.getElementById("timer").innerHTML = days + " | " + hours + " | 0" + minutes + " | " + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+                            else if(distance >= 0 && hours < 10) {
+                                document.getElementById("timer").innerHTML = days + " | 0" + hours + " | " + minutes + " | " + seconds
+                                + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+                            }
+
+                            // If the count down is over, write some text 
+                            if (distance < 0) {
+                                clearInterval(x);
+                                document.getElementById("timer").innerHTML = "Registration Closed";
+                            }
+                            }, 1000);
+                            </script>
+                        </p>
+                    </span>
                 </div>
-                <div class="mentor tile">
-                    <a href="https://acmutd.typeform.com/to/JY8iutCk"> OR BECOME A MENTOR</a>
-                    <img src="assets/PolySwords.svg" class="anchor">
-                </div>
-
             </div>
         </div>
 
