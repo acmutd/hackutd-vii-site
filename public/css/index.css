@@ -337,7 +337,10 @@ img {
   }
 
   .iframe-container {
-    display: none;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: auto;
+    order: 2;
   }
 
    .about-content-body {
