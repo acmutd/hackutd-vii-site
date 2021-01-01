@@ -126,6 +126,14 @@ img {
   width: 100%;
 }
 
+.sea-bg {
+  width: 100%;
+}
+
+.sea-bg-mobile {
+  display: none;
+}
+
 .sea-container {
   position: relative;
   transition: height 0.2s ease-out;
@@ -367,6 +375,17 @@ img {
   }
   .anchor {
     width: 1.4rem;
+  }
+
+  .sea-bg {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .sea-bg-mobile {
+    display: block;
+    width: 100%;
   }
 
   .whale {
