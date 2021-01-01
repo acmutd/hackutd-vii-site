@@ -126,6 +126,14 @@ img {
   width: 100%;
 }
 
+.island {
+  width: 100%;
+}
+
+.island-mobile {
+  display: none;
+}
+
 .sea-bg {
   width: 100%;
 }
@@ -343,24 +351,35 @@ img {
     order: 2;
   }
 
-   .about-content-body {
+  .about-content-body {
    flex-direction: column;
-   }
+  }
 
-   .about-text {
+  .about-text {
    order: 1;
    width: 100%;
    font-size: 1.5rem;
    line-height: 2.1rem;
-   }
+  }
 
-   .register {
+  .island {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  
+  .island-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .register {
      margin-top: 1rem;
      font-size: 1.3rem;
      padding: 1rem;
-   }
+  }
    
-   .mentor {
+  .mentor {
     margin-top: 1rem;
     font-size: 1.3rem;
     padding: 1rem;
