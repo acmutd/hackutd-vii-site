@@ -329,10 +329,7 @@ img {
   }
 
   .iframe-container {
-    margin-top: 0.5rem;
-    width: 100%;
-    height: auto;
-    order: 2;
+    display: none;
   }
 
    .about-content-body {
@@ -348,12 +345,14 @@ img {
 
    .register {
      margin-top: 1rem;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
+     padding: 1rem;
    }
    
    .mentor {
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding: 1rem;
   }
 
   .main-title {
