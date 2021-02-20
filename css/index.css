@@ -461,7 +461,7 @@ img {
     margin-bottom: 2rem;
   }
 
-  /* .bottom-container {
+  .bottom-container {
     margin-top: 3rem;
     height: 25rem;
   }
@@ -473,5 +473,5 @@ img {
 
   .bottom-content {
     padding-top: 0;
-  } */
+  }
 }
