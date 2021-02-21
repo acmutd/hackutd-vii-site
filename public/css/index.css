@@ -83,6 +83,7 @@ img {
 .eventbttn {
   margin-top: 1rem;
   background-color: rgba(110, 112, 245, 0.75);
+  backdrop-filter: blur(5px) !important;
   /*normal tile color*/
   /* background-color: rgba(255, 255, 255, 0.15); */
   border-radius: 15px;
@@ -95,8 +96,9 @@ img {
 
 .timer {
   margin-bottom: 50rem;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(148, 148, 148, 0.15);
+  /* background-color: rgba(110, 112, 245, 0.15); */
+  backdrop-filter: blur(3px) !important;
   border-radius: 15px;
   padding: 0rem 2rem;
 }
