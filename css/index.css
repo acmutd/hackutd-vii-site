@@ -78,6 +78,19 @@ img {
   font-weight: bolder;
   margin-top: 5rem;
   position: relative;
+  margin-bottom: 2rem;
+}
+.eventbttn {
+  margin-top: 1rem;
+  background-color: rgba(110, 112, 245, 0.75);
+  /*normal tile color*/
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 25%;
 }
 
 .timer {
@@ -372,8 +385,14 @@ img {
 
   .register {
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     padding: 1rem;
+  }
+
+  .eventbttn {
+    margin-top: 1rem;
+    font-size: 0.9rem;
   }
 
   .mentor {
