@@ -162,6 +162,14 @@ img {
   transition: height 0.2s ease-out;
 }
 
+.spacing {
+  margin-top: 30px;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
 .sea-content {
   position: absolute;
   top: 0;
@@ -170,6 +178,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.about2 {
+  padding-top: 5%;
+  width: 75%;
+  margin-bottom: 3rem;
 }
 
 .about {
@@ -190,6 +204,10 @@ img {
 }
 
 .about-content-body {
+  display: flex;
+}
+
+.about-content-body2 {
   display: flex;
 }
 
@@ -274,6 +292,51 @@ img {
   display: flex;
   flex-direction: column;
 }
+.flip-card {
+background-color: transparent;
+  width:30rem;
+  height:30rem;
+  padding-bottom: 5rem;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  color: white;
+  transform: rotateY(180deg);
+}
 
 .icons {
   align-self: flex-end;
@@ -343,6 +406,12 @@ img {
   align-items: center;
 }
 
+.keynote-pic {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 500px;
+}
+
 .tile {
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
@@ -372,17 +441,34 @@ img {
     order: 2;
   }
 
+  .iframe-container2 {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
   .about-content-body {
     flex-direction: column;
   }
 
+  .about-content-body2 {
+    flex-direction: row;
+  }
   .about-text {
     order: 1;
     width: 100%;
     font-size: 1.5rem;
     line-height: 2.1rem;
+    height: auto;
+    position: relative;
   }
-
+  
+  .about-text2 {
+    order: 2;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
   .island {
     display: none;
     width: 0;
@@ -424,6 +510,12 @@ img {
   {
     width: 75% !important;
   }
+
+  #hp {
+    float: left;    
+     margin: 5px 15px 0 0;
+  }
+  
   .anchor {
     width: 1.4rem;
   }
