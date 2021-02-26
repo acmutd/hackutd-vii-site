@@ -167,7 +167,7 @@ img {
 }
 
 .grow {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .sea-content {
@@ -222,6 +222,19 @@ img {
 
   margin-top: 1rem;
   margin-bottom: 3rem;
+}
+
+.schedulec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  text-align: center;
+  width: 78%;
+
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  background-color: red;
 }
 
 .timer-align {
@@ -293,9 +306,9 @@ img {
   flex-direction: column;
 }
 .flip-card {
-background-color: transparent;
-  width:22rem;
-  height:22rem;
+  background-color: transparent;
+  width: 22rem;
+  height: 22rem;
   padding-bottom: 5rem;
 }
 
@@ -315,7 +328,8 @@ background-color: transparent;
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -335,6 +349,57 @@ background-color: transparent;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
   color: white;
+  transform: rotateY(180deg);
+}
+
+.flipc-card {
+  background-color: transparent;
+  width: 22rem;
+  height: 22rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* This container is needed to position the front and back side */
+.flipc-card-inner {
+  position: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipc-card:hover .flipc-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flipc-card-front,
+.flipc-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flipc-card-front img,
+.flipc-card-back img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipc-card-front {
+  color: black;
+}
+
+/* Style the back side */
+.flipc-card-back {
   transform: rotateY(180deg);
 }
 
@@ -443,6 +508,18 @@ background-color: transparent;
   .timer {
     display: none;
   }
+  #challenge {
+    display: none;
+  }
+  #Challenge_Title {
+    display: none;
+  }
+  .sponsors img {
+    width: 60%;
+  }
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -479,7 +556,7 @@ background-color: transparent;
     height: auto;
     position: relative;
   }
-  
+
   .about-text2 {
     order: 2;
     width: 100%;
@@ -500,7 +577,7 @@ background-color: transparent;
   .register {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 1rem;
   }
 
@@ -529,10 +606,10 @@ background-color: transparent;
   }
 
   #hp {
-    float: left;    
-     margin: 5px 15px 0 0;
+    float: left;
+    margin: 5px 15px 0 0;
   }
-  
+
   .anchor {
     width: 1.4rem;
   }
@@ -576,8 +653,12 @@ background-color: transparent;
     gap: 0.5rem;
   }
 
+  .sponsors img {
+    width: 50%;
+  }
+
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .date {
