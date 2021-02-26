@@ -578,7 +578,23 @@ img {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+
+  .tile {
+    padding: 0.5rem 1rem;
+  }
+
+  .register img {
+    width: 5%;
+  }
+
+  .icons {
+    margin-bottom: 0.5rem;
+  }
+
+  .icons i {
+    font-size: 20px;
   }
 
   .eventbttn {
