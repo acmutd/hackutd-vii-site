@@ -216,7 +216,7 @@ img {
   flex-direction: row;
   justify-content: flex-start;
   justify-content: space-between;
-
+  flex-grow: 1;
   text-align: center;
   width: 78%;
 
@@ -508,11 +508,15 @@ img {
   .timer {
     display: none;
   }
-  #challenge {
+  /* #challenge {
     display: none;
   }
   #Challenge_Title {
     display: none;
+  } */
+
+  #challengemargin {
+    margin-bottom: 3rem;
   }
   .sponsors img {
     width: 60%;
