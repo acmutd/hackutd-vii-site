@@ -5,7 +5,7 @@ function pad (str, max) {
   }
 
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 27, 2021 00:00:00").getTime();
+var countDownDate = new Date("Feb 27, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -25,12 +25,13 @@ var x = setInterval(function() {
 //Need to do some interesting acrobats to get the padding to work
 
 document.getElementById("timer").innerHTML = pad(days, 2) + " | " + pad(hours, 2) + " | " + pad(minutes, 2) + " | " + pad(seconds, 2)
-    + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font>';
+    + '<font size="2.45rem"> <br/> Days &nbsp |&nbsp  &nbsp &nbsp Hr &nbsp  &nbsp | &nbsp &nbsp Min &nbsp | &nbsp Sec &nbsp  </font><br/><br/>' +
+    " Until hacking begins!";
 
 
 // If the count down is over, write some text 
 if (distance < 0) {
     clearInterval(x);
-    document.getElementById("timer").innerHTML = "HACKING HAS BEGUN!";
+    document.getElementById("timer").innerHTML = "WOHOO! HACKING HAS BEGUN!";
 }
 }, 1000);
