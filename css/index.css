@@ -81,10 +81,16 @@ img {
   margin-bottom: 2rem;
   text-align: center;
 }
+/* For safari visibility */
+.mainTitle {
+  background-color: rgba(148, 148, 148, 0.3) !important;
+  -webkit-backdrop-filter: blur(5px);
+}
 .eventbttn {
   margin-top: 1rem;
   background-color: rgba(110, 112, 245, 0.75);
-  backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   /*normal tile color*/
   /* background-color: rgba(255, 255, 255, 0.15); */
   border-radius: 15px;
