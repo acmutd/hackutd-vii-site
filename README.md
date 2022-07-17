@@ -1,7 +1,7 @@
 # 7seas Site
 Site for HackUTD's Spring 2021 event: HackUTD VII Seas.
 
-2021.hackutd.co
+[Event Site Link](https://vii.hackutd.co)
 
 # Development
 The site is a plain html/css/js site (yes, they exist). Everything is contained in the `/public` directory. 
